@@ -10,5 +10,7 @@ void main() {
   Flame.device.setLandscape();
 
   PearAdventure game = PearAdventure();
-  runApp(GameWidget(game: kDebugMode ? PearAdventure() : game));
+  runApp(
+    GameWidget(game: kDebugMode ? PearAdventure() : game),
+  );
 }
